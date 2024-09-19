@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo integrador HTML CSS JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="search__container">
+            <input type="text" class="header__input" placeholder="Ingresa un elemento" id="searchInput">
+            <button class="header__btn" id="searchBtn">Buscar </button>
+        </div>
+
+        <button class="header__btn right" id="addElementBtn">Agregar Elemento</button>
+
+    </header>
+    <main class="main__container" id="mainContainer">
+        <aside class="aside">
+            <p class="aside__title">Categorias</p>
+            <ul class="aside__list">
+                <li class="list__item" id="todosLosProductosSection">Todos los productos</li>
+                <li class="list__item" id="hamburguesasSection">Hamburguesas</li>
+                <li class="list__item" id="papasSection">Papas</li>
+                <li class="list__item" id="gaseosasSection">Gaseosas</li>
+                <li class="list__item" id="mayorPrecioSection">Mayor precio</li>
+                <li class="list__item" id="menorPrecioSection">Menor precio</li>
+                
+            </ul>    
+        </aside>
+        <div class="hero__container">
+
+            <p class="hero__title" id="heroTitle">Todos los productos</p>
+
+             <div class="hero__products" id="heroProducts">
+               
+        </div>
+    </div>
+</div>
+</main>
+<div class="products__popup" id="productsPopup">
+    <p class="popup__title">Agregar  un producto</p>
+    
+        <form action="" class="form">
+
+            <input type="text" class="popup__input" placeholder="Ingrese un nombre" id="popupTxtInput" required>
+            <input type="text" class="popup__input" placeholder="Ingrese una imagen" id="popupImgInput" required>
+            <input type="number" class="popup__input" placeholder="$Precio" id="popupPriceInput" required>
+        <select name="categoria" id="selectCategory" required>
+        <option value="Elige una categoria">Elige una categoría</option>
+        <option value="Hamburguesas">Hamburguesas</option>
+        <option value="Papas">Papas</option>
+        <option value="Gaseosas">Gaseosas</option>
+        
+        </select>
+        
+        <div class="popup__buttons">
+            <button class="accept" id="popupAcceptBtn">Aceptar</button>
+            <button class="cancel" id="popupCancelBtn">Cancelar</button>
+        </div>
+    </form>
+    
+</div>
+<div class="products__popup" id="modifyPopup">
+    <p class="popup__title">Modificar un producto</p>
+    <form class="form">
+
+        <input type="text" class="popup__input" placeholder="Ingrese un nombre" id="modifyPopupTxtInput" required>
+        <input type="text" class="popup__input" placeholder="Ingrese una imagen" id="modifyPopupImgInput" required>
+        <input type="number" class="popup__input" placeholder="$Precio" id="modifyPopupPriceInput" required>
+        
+
+        <div class="popup__buttons">
+            <button class="accept" id="modifyAcceptBtn">Aceptar</button>
+            <button class="cancel" id="modifyCancelBtn">Cancelar</button>
+            <button class="delete" id="modifyDeleteBtn">Eliminar producto</button>
+        </div>
+    </form>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
