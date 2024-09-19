@@ -17,6 +17,9 @@ body {
   background: var(--color-hero);
   height: 100vh;
 }
+html{
+  width: 100vw;
+}
 .header {
   display: flex;
   width: 100%;
