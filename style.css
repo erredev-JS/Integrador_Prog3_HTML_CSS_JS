@@ -225,4 +225,7 @@ select{
   .aside{
     width: 190px;
   }
+  .hero__container{
+    margin-left: 15px ;
+  }
 }
